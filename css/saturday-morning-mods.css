@@ -1,0 +1,196 @@
+/* ----- FONTS ----- */
+/* latin */
+@font-face {
+  font-family: 'Josefin Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Josefin Slab'), local('JosefinSlab'), url(https://fonts.gstatic.com/s/josefinslab/v6/46aYWdgz-1oFX11flmyEfegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v9/GsNxiN0oIzsS201cnUag6w.woff2) format('woff2');
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v9/I0dEfRgGNE90_hXZq7bjyw.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lora'), local('Lora-Regular'), url(https://fonts.gstatic.com/s/lora/v9/4vqKRIwnQQGUQQh-PnvdMA.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* ----- BODY ----- */
+
+body {   font-family: 'Lora'; background: #fff url() repeat fixed; }
+
+a, a:link, a:hover, a:visited, a:active { text-decoration: none; color: #999; }
+
+a:hover { color: #aaa; text-decoration: none; }
+
+blockquote { padding: 10px; font-style: italic; color: #555; border-bottom: 10px solid #eee; }
+
+/* ---- CONTENT ---- */
+
+#content { margin: 0 auto; }
+
+
+/* ---- PRIMARY ---- */
+
+#primary { width: 55%; margin: 0 auto;  }
+
+#primary > .inner { margin-top: 30px; }
+
+.entry { background: #ffffff; line-height: 1.5em; }
+
+.entry-title { font-size: 22px; text-transform: uppercase;  color: #686868; font-family: 'Josefin Slab'; letter-spacing: 2px; }
+
+.entry-title a { color: #686868; }
+
+.datetime { text-transform: uppercase; font-size: 11px;                 color: #898989; margin-top: -10px !important; }
+
+.header { padding: 5px; text-align: center;   }
+
+.entry-content { padding: 15px; color: #666; font-size: 14px;  }
+
+ul.entry-interaction-links.text-links { text-align: center; padding-bottom: 10px; text-transform: uppercase;}
+
+ul.entry-management-links.icon-links { text-align: center; }
+
+@media only screen and (min-width: 60em) {
+  .entry-content img, .comment-content img { max-width: 100%; }
+}
+
+/* ---- SECONDARY ---- */
+
+#secondary { padding-top: 30px; padding-bottom: 30px; background: #bbb url(http://i.imgur.com/x2VVJ9Y.png) repeat fixed; width: 100%;}
+
+#secondary > .inner { width: 650px; margin: 0 auto;  }
+
+ul.module-list { display: inline; padding-top: 5px; padding: 10px; }
+
+li.module-list-item { display: inline; margin: 5px; }
+
+.module {
+    color: #777; margin: 0 auto; padding: 10px; display: inline-block; text-align: left; vertical-align: top; }
+
+h2.module-header { margin-left: -23px; padding-bottom: 5px; border-bottom: 1px solid #e1e1e1; text-align: center; z-index: 200; font-size: 22px; text-transform: uppercase;  color: #686868; font-family: 'Josefin Slab'; letter-spacing: 2px; }
+
+.module-customtext.module { vertical-align: middle; width: 300px; border-left: 1px solid #e1e1e1; margin-left: -15px; }
+
+.module-customtext.module > .module-content { padding: 10px; background: #fff; font-size: 11px; }
+
+.module-userprofile.module { vertical-align: middle; height: 145px; }
+
+.userpic img { border-radius: 100%; height: 70px; width: 70px; z-index: 1000; }
+
+
+/* ---- DISPLAY ---- */
+
+h2#pagetitle, h2#subtitle, .journal-name, #footer, div.navigation.topnav, .tag, .manage-link, ul.userlite-interaction-links.icon-links, .module-userprofile.module > h2.module-header, .module-customtext.module > h2.module-header, #header  { display: none; }
+
+/* ----- CONTROL STRIP ----- */
+
+#lj_controlstrip {
+background:#ffffff;
+background-position: 0 0;
+color: #666 !important;
+border:0px;
+z-index: 1000;
+text-align: center; box-shadow: 3px 3px 3px #aaa;
+ }
+
+#lj_controlstrip a { color: #666 !important; }
+
+#lj_controlstrip_userpic { display: none !important; }
+
+#lj_controlstrip td, #lj_controlstrip_statustext {
+color: #777 !important;
+}
+
+#lj_controlstrip input {
+color:#606060 !important;
+background-color: #f5f5f5 !important;
+border: 0px solid #cccccc;
+}
+
+#lj_controlstrip_user, #lj_controlstrip_actionlinks, #lj_controlstrip_login {
+border-right: 0 !important;
+color: #666 !important;
+}
+
+/* PERSONAL OVERRIDES */
+
+.entry .header {
+  position: relative;
+  margin-top: 7em;
+}
+
+.entry .contents .userpic {
+  position: relative;
+  margin-top: -11em;
+  margin-bottom: 6em;
+  display: block;
+  height: 4em;
+}
+
+.entry .contents .userpic::before {
+  content: '⃟';
+  position: relative;
+  top: 3em;
+  left: 49%;
+  z-index: -1;
+}
+
+.entry .contents .userpic img {
+  margin: auto;
+  display: block;
+}
+
+@media all and (orientation:portrait) {
+  #primary {
+    width: 95%;
+  }
+
+  #secondary > .inner {
+    width: 85%;
+  }
+
+  .module-customtext.module {
+    margin-left: -320px;
+    margin-top: 75px;
+  }
+}
+
+@media all and (orientation:portrait) and (max-width: 400px) {
+  #primary > .inner:first-child,
+  #secondary > .inner:first-child {
+    padding: 0;
+  }
+
+  .module-userprofile.module {
+    height: initial;
+  }
+  .module-typelist.module {
+    margin-top: -20px;
+    margin-right: 20px;
+    position: absolute;
+  }
+  .module-customtext.module {
+    margin-left: 10px;
+    margin-top: initial;
+    width: 85%;
+  }
+}
